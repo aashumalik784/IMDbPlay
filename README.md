@@ -23,6 +23,12 @@
   </a>
 </p>
 
+## Demo Preview — Interstellar
+
+https://github.com/user-attachments/assets/d55be147-c8dd-4bfa-800f-259f832f554e
+
+<br>
+
 </div>
 
 # Preview
@@ -35,10 +41,6 @@
 
 <img src="https://github.com/user-attachments/assets/cd9510e2-8ed7-437e-869e-c044e470d911" width="60%" alt="Overlay Player" />
 <img src="https://github.com/user-attachments/assets/108f21ce-b9f2-45a5-9665-b629510604fc" width="70%" alt="Watch Dhurandhar (2025) HD FREE" />
-
-## Extension Popup UI
-
-<img src="https://github.com/user-attachments/assets/a5ec4e6b-4ed0-4933-b6c4-5de4d4d8aadf" width="30%" alt="Popup UI" />
 
 # Features
 
