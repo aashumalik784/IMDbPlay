@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDbPlay</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 320px;
+      background: #121212;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0b0b0b 100%);
+      border-bottom: 2px solid #f5c518;
+      padding: 16px 18px 14px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .app-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow:
+        0 4px 16px rgba(0,0,0,.35),
+        0 0 10px rgba(245,197,24,.18);
+      transition:
+        transform .18s ease,
+        box-shadow .18s ease;
+    }
+
+    .app-logo:hover {
+      transform: scale(1.06);
+      box-shadow:
+        0 6px 18px rgba(0,0,0,.4),
+        0 0 14px rgba(245,197,24,.28);
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header-text h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f5c518;
+      letter-spacing: .35px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-text p {
+      font-size: 11px;
+      color: #9a9a9a;
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    .badge {
+      background: rgba(245,197,24,.14);
+      color: #f5c518;
+      border: 1px solid rgba(245,197,24,.28);
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: .3px;
+    }
+
+    .section {
+      padding: 14px 18px;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .how-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .how-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      color: #ccc;
+      font-size: 12.5px;
+    }
+
+    .how-list .icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(245,197,24,.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      margin-top: 1px;
+    }
+
+    .shield-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(76,175,80,.08);
+      border: 1px solid rgba(76,175,80,.2);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .shield-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .shield-text strong {
+      color: #81c784;
+      font-size: 12.5px;
+      display: block;
+    }
+
+    .shield-text span {
+      color: #666;
+      font-size: 11px;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4caf50;
+      display: inline-block;
+      margin-right: 5px;
+      box-shadow: 0 0 6px rgba(76,175,80,.7);
+    }
+
+    .tip-box {
+      display: flex;
+      gap: 10px;
+      background: rgba(255,152,0,.07);
+      border: 1px solid rgba(255,152,0,.25);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .tip-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .tip-text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .tip-text strong {
+      color: #ffb74d;
+      font-size: 12.5px;
+      display: block;
+    }
+
+    .tip-text span {
+      color: #888;
+      font-size: 11.5px;
+    }
+
+    .adblocker-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 4px;
+    }
+
+    .ab-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      padding: 7px 10px;
+      text-decoration: none;
+      transition: background .15s, border-color .15s;
+    }
+
+    .ab-btn:hover {
+      background: rgba(255,152,0,.1);
+      border-color: rgba(255,152,0,.35);
+    }
+
+    .ab-name {
+      color: #ddd;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .ab-tag {
+      background: rgba(76,175,80,.2);
+      color: #81c784;
+      border: 1px solid rgba(76,175,80,.3);
+      border-radius: 4px;
+      font-size: 10px;
+      padding: 1px 6px;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 8px 18px 12px;
+      text-align: center;
+      font-size: 10px;
+      color: #333;
+    }
+
+    .footer a {
+      color: #555;
+      text-decoration: none;
+    }
+    .footer a:hover { color: #f5c518; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="icons/icon.png" alt="IMDbPlay Logo" class="app-logo" />
+
+  <div class="header-text">
+    <h1>IMDbPlay <span class="badge">v1.2</span></h1>
+    <p>Play movies &amp; shows from IMDb</p>
+  </div>
+</div>
+
+  <div class="section">
+    <div class="section-title">How to use</div>
+    <ul class="how-list">
+      <li>
+        <span class="icon">🎬</span>
+        <span>Go to any IMDb movie or TV show page</span>
+      </li>
+      <li>
+        <span class="icon">▶</span>
+        <span>Click the <strong style="color:#f5c518">▶</strong> button next to the title to play in an overlay</span>
+      </li>
+      <li>
+        <span class="icon">⌨</span>
+        <span><kbd style="background:#222;border:1px solid #444;border-radius:3px;padding:1px 5px;font-size:11px">Ctrl</kbd> + click to open in a new tab</span>
+      </li>
+      <li>
+        <span class="icon">⎋</span>
+        <span>Press <kbd style="background:#222;border:1px solid #444;border-radius:3px;padding:1px 5px;font-size:11px">Esc</kbd> or click outside to close the overlay</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Ad Protection</div>
+    <div class="shield-row">
+      <div class="shield-icon">🛡️</div>
+      <div class="shield-text">
+        <strong><span class="status-dot"></span>Ad Blocker Active</strong>
+        <span>Blocking known ad &amp; tracker networks at the network level</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">For the best experience</div>
+    <div class="tip-box">
+      <div class="tip-icon">⚠️</div>
+      <div class="tip-text">
+        <strong>Videos may be interrupted by ads</strong>
+        <span>Install one of these free ad blocker extensions for a smooth, uninterrupted viewing experience:</span>
+        <div class="adblocker-list">
+          <a class="ab-btn" href="https://ublockorigin.com/" target="_blank">
+            <span class="ab-name">uBlock Origin</span>
+            <span class="ab-tag">Recommended</span>
+          </a>
+          <a class="ab-btn" href="https://adblockplus.org/" target="_blank">
+            <span class="ab-name">Adblock Plus</span>
+          </a>
+          <a class="ab-btn" href="https://getadblock.com/" target="_blank">
+            <span class="ab-name">AdBlock</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://github.com/cu-sanjay/IMDbPlay" target="_blank">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/cu-sanjay" target="_blank">@cu-sanjay</a>
+    &nbsp;·&nbsp;
+    <a href="https://choosealicense.com/licenses/mit/" target="_blank">MIT License</a>
+  </div>
+
+</body>
+</html>
