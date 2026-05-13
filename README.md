@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/cu-sanjay/IMDbPlay/raw/master/IMDbPlay.user.js">
+  <a href="https://github.com/cu-sanjay/IMDbPlay/raw/main/IMDbPlay.user.js">
     <img src="https://img.shields.io/badge/Install-Userscript-f5c518?style=for-the-badge&logo=tampermonkey&logoColor=black" />
   </a>
 </p>
@@ -83,7 +83,7 @@ Then install IMDbPlay:
 
 ## Install Userscript
 
-https://github.com/cu-sanjay/IMDbPlay/raw/master/IMDbPlay.user.js
+https://github.com/cu-sanjay/IMDbPlay/raw/main/IMDbPlay.user.js
 
 # How To Use
 
