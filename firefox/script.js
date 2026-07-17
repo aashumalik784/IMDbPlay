@@ -10,13 +10,13 @@
       btn.setAttribute('aria-label', 'Play');
       btn.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="34" height="34"
-            style="vertical-align:middle;margin-left:10px;cursor:pointer;
-                    fill:#f5c518;filter:drop-shadow(0 1px 5px rgba(0,0,0,.55));
-                    transition:transform .15s,filter .15s;">
-          <circle cx="13" cy="13" r="11.8" fill="none" stroke="rgba(255,255,255,0.72)" stroke-width="1.4"/>
-          <circle cx="13" cy="13" r="11" fill="rgba(0,0,0,0.60)"/>
-          <polygon points="10.2,8.2 19.2,13 10.2,17.8" fill="#f5c518"/>
-        </svg>`;
+              style="vertical-align:middle;margin-left:10px;cursor:pointer;
+                      fill:#f5c518;filter:drop-shadow(0 1px 5px rgba(0,0,0,.55));
+                      transition:transform .15s,filter .15s;">
+            <circle cx="13" cy="13" r="11.8" fill="none" stroke="rgba(255,255,255,0.72)" stroke-width="1.4"/>
+            <circle cx="13" cy="13" r="11" fill="rgba(0,0,0,0.60)"/>
+            <polygon points="10.2,8.2 19.2,13 10.2,17.8" fill="#f5c518"/>
+          </svg>`;
 
       btn.addEventListener('click', (e) => {
         const segments = window.location.pathname.split('/').filter(Boolean);

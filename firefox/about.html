@@ -23,18 +23,7 @@
       -ms-overflow-style: none;
     }
 
-    body::-webkit-scrollbar {
-      display: none;
-    }
-
-    #sidebar {
-      overflow-y: scroll;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-    #sidebar::-webkit-scrollbar {
-      display: none;
-    }
+    body::-webkit-scrollbar { display: none; }
 
     .header {
       background: linear-gradient(135deg, #1a1a1a 0%, #0b0b0b 100%);
@@ -101,7 +90,17 @@
       letter-spacing: .3px;
     }
 
-    /* IMDb quick-link bar */
+    .badge-ff {
+      background: rgba(255,100,0,.14);
+      color: #ff6600;
+      border: 1px solid rgba(255,100,0,.28);
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: .3px;
+    }
+
     .imdb-bar {
       padding: 10px 18px;
       border-bottom: 1px solid #1e1e1e;
@@ -304,7 +303,7 @@
   <img src="icons/icon.png" alt="IMDbPlay Logo" class="app-logo" />
 
   <div class="header-text">
-    <h1>IMDbPlay <span class="badge">v1.3</span></h1>
+    <h1>IMDbPlay <span class="badge">v1.3</span> <span class="badge-ff">Firefox</span></h1>
     <p>Play movies &amp; shows from IMDb</p>
   </div>
 </div>
@@ -360,14 +359,14 @@
         <strong>Videos may be interrupted by ads</strong>
         <span>Install one of these free ad blocker extensions for a smooth, uninterrupted viewing experience:</span>
         <div class="adblocker-list">
-          <a class="ab-btn" href="https://ublockorigin.com/" target="_blank">
+          <a class="ab-btn" href="https://addons.mozilla.org/firefox/addon/ublock-origin/" target="_blank">
             <span class="ab-name">uBlock Origin</span>
             <span class="ab-tag">Recommended</span>
           </a>
-          <a class="ab-btn" href="https://adblockplus.org/" target="_blank">
+          <a class="ab-btn" href="https://addons.mozilla.org/firefox/addon/adblock-plus/" target="_blank">
             <span class="ab-name">Adblock Plus</span>
           </a>
-          <a class="ab-btn" href="https://getadblock.com/" target="_blank">
+          <a class="ab-btn" href="https://addons.mozilla.org/firefox/addon/adblock-for-firefox/" target="_blank">
             <span class="ab-name">AdBlock</span>
           </a>
         </div>

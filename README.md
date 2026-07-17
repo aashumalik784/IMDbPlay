@@ -40,6 +40,9 @@ https://github.com/user-attachments/assets/d55be147-c8dd-4bfa-800f-259f832f554e
 > **Why isn't this in the Chrome Web Store?**
 > Google rejected this extension due to strict piracy and copyright policies. If you are using Google Chrome, Brave, or other Chromium-based browsers, you will need to install the extension manually via Developer Mode (instructions below).
 
+> [!NOTE]
+> **Firefox users:** A dedicated Firefox-compatible build lives in the `firefox/` folder. It uses Manifest V2 (the Firefox standard). See [Firefox Installation](#method-3--firefox-temporary-load) below.
+
 # Preview
 
 <table style="border-collapse: collapse; border: none; width: 100%;">
@@ -94,6 +97,27 @@ If you prefer keeping your extensions minimal, you can run this as a userscript.
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/).
 2. Click here to **[Install the IMDbPlay Userscript](https://github.com/cu-sanjay/IMDbPlay/raw/main/IMDbPlay.user.js)**.
+
+## Method 3 — Firefox (Temporary Load)
+
+Firefox uses **Manifest V2**, so the Firefox build lives in the **firefox/** folder.
+
+### Temporary install (survives until Firefox restarts)
+
+1. Open Firefox and navigate to: `about:debugging#/runtime/this-firefox`
+2. Click **Load Temporary Add-on…**
+3. Browse into the `firefox/` folder and select `manifest.json`.
+4. Done. The extension is active until you restart Firefox.
+
+### Permanent install (recommended)
+
+Firefox does not allow loading unsigned extensions permanently through the UI unless you use the Developer or Nightly edition.
+
+**Option A — Firefox Developer Edition / Nightly:**
+1. Open `about:config` and set `xpinstall.signatures.required` to `false`.
+2. Zip the contents of the `firefox/` folder (not the folder itself — zip `manifest.json`, `script.js`, `about.html`, and `icons/`).
+3. Rename the `.zip` to `.xpi`.
+4. Drag and drop the `.xpi` file onto Firefox. Click **Add**.
 
 # How To Use
 

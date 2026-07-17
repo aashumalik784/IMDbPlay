@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "IMDbPlay",
-  "version": "1.2",
-  "description": "Play movies and TV shows directly from IMDb. Now with less ads!",
+  "name": "Stream Movies for Free - IMDbPlay",
+  "version": "1.3",
+  "description": "Play movies and TV shows directly from IMDb. Watch Latest Movies and Webseries Online for Free.",
 
   "host_permissions": [
     "https://www.imdb.com/title/tt*"
