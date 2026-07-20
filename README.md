@@ -6,153 +6,179 @@
 
 ### Watch Movies & TV Shows Directly From IMDb
 
-<p align="center">
-  Clean Overlay • One Click Play • IMDb Integration • Lightweight
+<p>
+A lightweight browser extension that adds a beautiful one click streaming overlay directly inside IMDb.
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/cu-sanjay/IMDbPlay?style=for-the-badge&color=f5c518" />
-  <img src="https://img.shields.io/github/license/cu-sanjay/IMDbPlay?style=for-the-badge&color=111111" />
-  <img src="https://img.shields.io/github/repo-size/cu-sanjay/IMDbPlay?style=for-the-badge&color=2b2b2b" />
+<p>
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#feature">Features</a> •
+  <a href="#how-to-use">How to Use</a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/cu-sanjay/IMDbPlay/raw/main/IMDbPlay.user.js">
-    <img src="https://img.shields.io/badge/Install-Userscript-f5c518?style=for-the-badge&logo=tampermonkey&logoColor=black" />
-  </a>
+<p>
+  <img src="https://img.shields.io/github/stars/cu-sanjay/IMDbPlay?style=for-the-badge&logo=github&label=Stars&color=f5c518" alt="Stars" />
+  <img src="https://img.shields.io/github/downloads/cu-sanjay/IMDbPlay/total?style=for-the-badge&label=Downloads&color=3b82f6" alt="Downloads" />
+  <img src="https://img.shields.io/github/license/cu-sanjay/IMDbPlay?style=for-the-badge&label=License&color=22c55e" alt="License" />
 </p>
 
-<p align="center">
-  <a href="https://microsoftedge.microsoft.com/addons/detail/stream-movies-for-free-/plpglblclokedhebmdgnaajnmdipindi">
-    <img width="200" alt="Get it from Microsoft Edge" src="https://github.com/user-attachments/assets/e7a16358-785f-4333-80be-d137be3fc0ae" />
-  </a>
+<p>
+  <img src="https://img.shields.io/github/release/cu-sanjay/IMDbPlay?style=for-the-badge&label=Latest%20Version&color=8b5cf6" alt="Latest Version" />
+  <img src="https://img.shields.io/github/last-commit/cu-sanjay/IMDbPlay?style=for-the-badge&label=Last%20Updated&color=64748b" alt="Last Commit" />
+  <img src="https://img.shields.io/github/repo-size/cu-sanjay/IMDbPlay?style=for-the-badge&label=Repository&color=111827" alt="Repo Size" />
 </p>
-
-## Demo Preview — Interstellar
-
-https://github.com/user-attachments/assets/d55be147-c8dd-4bfa-800f-259f832f554e
-
-<br>
 
 </div>
 
+<p align="center">
+  <a href="https://github.com/cu-sanjay/IMDbPlay/releases/download/Version1.3.0/IMDbPlay-Chrome-1.3.zip">
+    <img src="https://github.com/user-attachments/assets/ef9ab8d1-6879-436f-b3eb-9c531e29b065" alt="Chrome" height="70">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://addons.mozilla.org/addon/imdb-play/">
+    <img src="https://github.com/user-attachments/assets/9a3b878d-7281-4ca6-8a63-169e902a337e" alt="Firefox" height="70">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://microsoftedge.microsoft.com/addons/detail/stream-movies-for-free-/plpglblclokedhebmdgnaajnmdipindi">
+    <img src="https://github.com/user-attachments/assets/8a0faeaa-5919-4232-9bfd-e6364a96877a" alt="Microsoft Edge" height="70">
+  </a>
+</p>
+
+## Demo
+
+### Interstellar Demo
+
+[https://github.com/user-attachments/assets/d55be147-c8dd-4bfa-800f-259f832f554e](https://github.com/user-attachments/assets/d55be147-c8dd-4bfa-800f-259f832f554e)
+
+# Video Guide
+
+> [!TIP]
+> New to manual Chrome extensions? Watch this short installation guide.
+
+<p align="center">
+  <a href="https://youtu.be/kCXbUXgOkRQ?si=axKbRl0fDQuK5rDX">
+    <img src="https://img.youtube.com/vi/kCXbUXgOkRQ/maxresdefault.jpg" width="720" alt="IMDbPlay Installation Guide">
+  </a>
+  <br>
+  <sub><b>Click the preview above to watch on YouTube.</b></sub>
+</p>
+
+> [!IMPORTANT]
+> **Firefox** and **Microsoft Edge** users can install IMDbPlay directly from their official Add-on stores. Manual installation is only required for **Google Chrome** and other Chromium browsers that do not allow this extension in the Chrome Web Store.
+
 > [!WARNING]
-> **Why isn't this in the Chrome Web Store?**
-> Google rejected this extension due to strict piracy and copyright policies. If you are using Google Chrome, Brave, or other Chromium-based browsers, you will need to install the extension manually via Developer Mode (instructions below).
+> **Why isn't IMDbPlay available on the Chrome Web Store?**
+>
+> Google rejected the extension because of Chrome Web Store policies regarding copyrighted and streaming related content. Chrome users can still install IMDbPlay safely by enabling **Developer Mode** and loading the extension manually.
+# Screenshots
 
-> [!NOTE]
-> **Firefox users:** A dedicated Firefox-compatible build lives in the `firefox/` folder. It uses Manifest V2 (the Firefox standard). See [Firefox Installation](#method-3--firefox-temporary-load) below.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3013b1a3-fabc-4055-9211-354c8065eee4" width="460" height="260" alt="IMDb Integration">
+  <img src="https://github.com/user-attachments/assets/cd9510e2-8ed7-437e-869e-c044e470d911" width="460" height="260" alt="Fullscreen Player">
+</p>
 
-# Preview
+<p align="center">
+  <b>IMDb Integration</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Beautiful Fullscreen Player</b>
+</p>
 
-<table style="border-collapse: collapse; border: none; width: 100%;">
-  <tr>
-    <td align="center" style="border: none; padding: 10px;">
-      <img src="https://github.com/user-attachments/assets/3013b1a3-fabc-4055-9211-354c8065eee4" width="100%" alt="IMDb Page Integration" /><br>
-      <b>Fig 1: IMDb Page Integration</b>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <img src="https://github.com/user-attachments/assets/cd9510e2-8ed7-437e-869e-c044e470d911" width="100%" alt="Fullscreen Overlay Player" /><br>
-      <b>Fig 2: Fullscreen Overlay Player</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" style="border: none; padding: 10px;">
-      <img src="https://github.com/user-attachments/assets/254d6aa4-9614-4749-8910-f1a7960fb6d1" width="100%" alt="TV Series Episode List" /><br>
-      <b>Fig 3: TV Shows & Web Series Episode Selector (Top Left)</b>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <img src="https://github.com/user-attachments/assets/108f21ce-b9f2-45a5-9665-b629510604fc" width="100%" alt="Movie Playback Details" /><br>
-      <b>Fig 4: Subtitles & Video Quality Controls</b>
-    </td>
-  </tr>
-</table>
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/254d6aa4-9614-4749-8910-f1a7960fb6d1" width="460" height="260" alt="Episode Selector">
+  <img src="https://github.com/user-attachments/assets/108f21ce-b9f2-45a5-9665-b629510604fc" width="460" height="260" alt="Playback Controls">
+</p>
+
+<p align="center">
+  <b>Episode Selector</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Subtitles &amp; Quality Controls</b>
+</p>
 
 # Features
 
-- Direct movie and TV show playback from the IMDb interface.
-- Native TV show integration (episode selector built directly into the player).
-- Beautiful, lightweight fullscreen overlay.
-- `Ctrl/Cmd + Click` support to open the stream in a new tab.
-- `ESC` key support for instant closure.
-- Clean, modern UI designed to match IMDb's native aesthetic.
-- Zero tracking and no accounts required.
+* Watch movies and TV shows directly from IMDb.
+* Native episode selector for TV series.
+* Beautiful fullscreen overlay that matches IMDb's design.
+* One click playback.
+* `Ctrl` / `Cmd` + Click opens the player in a new tab.
+* Instant close with the `ESC` key.
+* No account required.
+* Lightweight and privacy friendly.
 
 # Installation
 
-## Method 1 — Download ZIP (For Chrome/Chromium Users)
+> [!NOTE]
+> **Recommended**
+>
+> * Firefox → Install from the Mozilla Add-ons store.
+> * Microsoft Edge → Install from the Microsoft Edge Add-ons store.
+> * Google Chrome, Brave, Vivaldi and other Chromium browsers → Follow the guide below.
 
-1. Go to the **[Releases](../../releases)** page on this repository.
-2. Download the latest `IMDbPlay.zip` file.
-3. Extract the ZIP file to a permanent folder on your computer.
-4. Open Chrome and navigate to: `chrome://extensions`
-5. Enable **Developer mode** in the top right corner.
-6. Click **Load unpacked** in the top left.
-7. Select the folder you just extracted.
-8. Done. The extension is active.
+## Chrome & Chromium Browsers
 
-## Method 2 — Userscript (Tampermonkey)
+1. Download the latest **Chrome ZIP** from the **Releases** page.
+2. Extract the archive to any permanent folder.
+3. Open `chrome://extensions`.
+4. Enable **Developer mode**.
+5. Click **Load unpacked**.
+6. Select the extracted IMDbPlay folder.
+7. IMDbPlay is now ready to use.
 
-If you prefer keeping your extensions minimal, you can run this as a userscript.
+## Userscript (Optional)
 
-1. Install [Tampermonkey](https://www.tampermonkey.net/).
-2. Click here to **[Install the IMDbPlay Userscript](https://github.com/cu-sanjay/IMDbPlay/raw/main/IMDbPlay.user.js)**.
+Prefer using Tampermonkey instead of an extension?
 
-## Method 3 — Firefox (Temporary Load)
+1. Install **Tampermonkey**.
+2. Install the **IMDbPlay Userscript** from the button at the top of this README.
 
-Firefox uses **Manifest V2**, so the Firefox build lives in the **firefox/** folder.
+# How to Use
 
-### Temporary install (survives until Firefox restarts)
+1. Open any IMDb movie or TV show.
+2. Click the yellow **Play** button.
+3. The player opens instantly inside IMDb.
 
-1. Open Firefox and navigate to: `about:debugging#/runtime/this-firefox`
-2. Click **Load Temporary Add-on…**
-3. Browse into the `firefox/` folder and select `manifest.json`.
-4. Done. The extension is active until you restart Firefox.
+### TV Shows
 
-### Permanent install (recommended)
+Select the season and episode directly from the player.
 
-Firefox does not allow loading unsigned extensions permanently through the UI unless you use the Developer or Nightly edition.
+### Open in New Tab
 
-**Option A — Firefox Developer Edition / Nightly:**
-1. Open `about:config` and set `xpinstall.signatures.required` to `false`.
-2. Zip the contents of the `firefox/` folder (not the folder itself — zip `manifest.json`, `script.js`, `about.html`, and `icons/`).
-3. Rename the `.zip` to `.xpi`.
-4. Drag and drop the `.xpi` file onto Firefox. Click **Add**.
+Hold **Ctrl** (Windows/Linux) or **Cmd** (macOS) while clicking the Play button.
 
-# How To Use
+### Close the Overlay
 
-### Overlay Mode
-- Open any IMDb title page.
-- Click the yellow play button.
-- The video opens instantly inside a fullscreen overlay.
-- For Web Series, select your desired season and episode from the dropdown in the top-left corner of the player.
-
-### New Tab Mode
-Hold **Ctrl** (or **Cmd** on Mac) and click the play button to launch the player in a separate tab.
-
-### Close Overlay
-You can close the player by:
-- Pressing **ESC** on your keyboard.
-- Clicking the `X` button in the UI.
-- Clicking anywhere outside the video frame.
+* Press **ESC**
+* Click the **×** button
+* Click outside the player
 
 # Recommended Setup
 
-Because playback relies on third-party video hosts, you may occasionally encounter redirect tabs or ads. For the cleanest experience, it is highly recommended to use this extension alongside **[uBlock Origin](https://ublockorigin.com/)**.
+> [!TIP]
+> For the cleanest viewing experience, pair IMDbPlay with **uBlock Origin**. It helps block redirects and advertisements that may originate from third party video providers.
 
 # Updating
 
-1. Download the newest ZIP from the Releases page.
-2. Extract it and overwrite the files in your existing extension folder.
-3. Go to `chrome://extensions` and click the reload icon (↻) on the IMDbPlay card.
+### Chrome Users
+
+1. Download the latest ZIP.
+2. Replace your existing extension files.
+3. Open `chrome://extensions`.
+4. Click the **Reload** button on IMDbPlay.
+
+> [!NOTE]
+> Firefox and Microsoft Edge users receive updates automatically through their respective Add-on stores.
 
 # License & Disclaimer
 
-MIT License
+> [!NOTE]
+> IMDbPlay is an open source project created for educational and experimental purposes.
 
-> [!NOTE]  
-> IMDbPlay is created for educational and experimental purposes only to demonstrate DOM manipulation, iframe overlays, and userscript integration techniques.
->
-> IMDbPlay does not host, upload, store, or distribute any media content. All playback content is served through third-party sources that are not owned or controlled by this project. Users are responsible for complying with local copyright laws and platform terms of service.
->
-> IMDb and related trademarks belong to their respective owners.
+> [!IMPORTANT]
+> IMDbPlay does **not** host, upload, store, or distribute any movies, TV shows, or media files. Playback is provided entirely by third party sources that are outside the control of this project.
+
+> [!WARNING]
+> Users are responsible for complying with their local laws and the terms of service of the websites they use. IMDb and all related trademarks remain the property of their respective owners.
