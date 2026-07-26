@@ -46,6 +46,14 @@ A lightweight browser extension that adds a beautiful one click streaming overla
   </a>
 </p>
 
+<div align="center">
+
+  <a href="https://www.imdbplay.tech/" target="_blank">
+    <img width="300" alt="Now Watch Online Button" src="https://github.com/user-attachments/assets/85e0c38a-e066-41d5-becb-2d63b3fa1015" />
+  </a>
+</div>
+
+
 ## Demo
 
 ### Interstellar Demo
